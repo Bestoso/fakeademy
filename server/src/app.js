@@ -19,6 +19,9 @@ app.get('*', (req, res) => {
 });
 
 app.use('/api', require('../router/app.router'));
+app.get('/proof', (req, res) => {
+    res.send('Hola mundo');
+})
 
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);

@@ -27,7 +27,7 @@ const createOrder = async (req, res) => {
             failure: `${HOST}/`,
             pending: `${HOST}/`,
         },
-        notification_url: "https://3958-152-169-15-65.ngrok.io/webhook",
+        notification_url: `${HOST}/api/payment/webhook?source_news=webhooks`,
         external_reference: uniqueCode,
         statement_descriptor: 'CODERHOUSE'
     });
